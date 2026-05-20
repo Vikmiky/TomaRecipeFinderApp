@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div class="welcome-bar">
+  <div class="welcome-left">
+    <img src="img/imgrecipe.png" width="120px" alt="" />
+    <span class="welcome-text">
+      Hello, <span id="userName">Chef</span> 👋
+    </span>
+  </div>
+  <div class="tomawel">
+    <h1>Welcome to TOMA Recipe Finder</h1>
+    <p>Search for any recipe in the world</p>
+  </div>
+
+  <div class="welcome-right">
+    <span class="welcome-sub">What are you cooking today?</span>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+
+
+  <!-- ── SEARCH SECTION ── -->
+  <div class="search-section">
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a recipe e.g Jollof Rice..."
+      />
+      <button onclick="searchRecipes()">Search</button>
+    </div>
+    <p class="error-msg" id="errorMsg"></p>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main id="mainContent">
+
+    <!-- Loading state -->
+    <div class="loading" id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Finding recipes...</p>
+    </div>
+
+    <!-- Recipe cards grid -->
+    <div class="recipes-grid" id="recipesGrid"></div>
+
+    <!-- Recipe detail view -->
+    <div class="recipe-detail" id="recipeDetail" style="display: ">
+      <button class="back-btn" onclick="goBack()">← Back to Results</button>
+      <div id="detailContent"></div>
+    </div>
+
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
