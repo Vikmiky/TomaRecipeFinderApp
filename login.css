@@ -312,9 +312,9 @@ margin-top: -10px;
 }
 
 
-/* ════════════════════════════
+/*
    TABLET — 768px to 1023px
-════════════════════════════ */
+ */
 @media (max-width: 1023px) {
   .auth-left {
     width: 45%;
@@ -341,10 +341,9 @@ margin-top: -10px;
   }
 }
 
-/* ════════════════════════════
+/* 
    MOBILE LARGE — 480px to 767px
-   e.g iPhone Plus, Samsung S
-════════════════════════════ */
+   */
 @media (max-width: 767px) {
   .auth-wrapper {
     flex-direction: column;
@@ -398,10 +397,8 @@ margin-top: -10px;
   }
 }
 
-/* ════════════════════════════
-   MOBILE MEDIUM — 360px to 479px
-   e.g iPhone 14, Samsung A
-════════════════════════════ */
+/*
+   MOBILE MEDIUM — 360px to 479px*/
 @media (max-width: 479px) {
   .auth-right {
     padding: 1.5rem 1rem;

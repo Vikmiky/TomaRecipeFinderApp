@@ -6,7 +6,7 @@ function switchTab(tab) {
   const loginTab = document.getElementById("loginTab");
   const signupTab = document.getElementById("signupTab");
 
-  // always hide forgot form when switching tabs
+  
   forgotForm.style.display = "none";
 
   if (tab === "login") {
@@ -132,7 +132,7 @@ function handleSignup() {
   }, 1500);
 }
 
-// ── Check if already logged in ──
+
 
 
 // ── Show forgot password form ──
